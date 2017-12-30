@@ -159,8 +159,8 @@ document.onkeydown = function(e) {
 document.onkeypress = function(evt) {
     evt = evt || window.event;
     var charCode = evt.keyCode || evt.which;
-    if (charCode == 13 || l > canvas.width-s*3) { clear(); l = 0; d += s*3; }  //enter+EOL
-    if (charCode == 32) { clear(); l += s*3; }  //space
+    if (charCode == 13 || l > canvas.width-s*3) { clear(); l = 0; d += s*3; return; }  //enter+EOL
+    if (charCode == 32) { clear(); l += s*3; return; }  //space
     
     if(charCode > 260) alert('Polish letters coming soon...');
     var at = charCode - 33;
