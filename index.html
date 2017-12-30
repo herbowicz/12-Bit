@@ -161,7 +161,8 @@ document.onkeypress = function(evt) {
     var charCode = evt.keyCode || evt.which;
     if (charCode == 13 || l > canvas.width-s*3) { clear(); l = 0; d += s*3; }  //enter+EOL
     if (charCode == 32) { clear(); l += s*3; }  //space
-
+    
+    if(charCode > 260) alert('polish');
     var at = charCode - 33;
 
     clear();
