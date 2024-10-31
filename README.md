@@ -3,3 +3,6 @@
 With this concept in mind, out of 2^12 = 4096 signs available, only some were carefully chosen to represent all large and small characters of the standard Latin alphabet. Enjoy!
 
 [Demo](https://herbowicz.github.io/12/) (start typing, try w/caps lock too)
+
+## Sample text
+![sample text](image.png)
