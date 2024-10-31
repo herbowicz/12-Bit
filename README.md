@@ -5,6 +5,7 @@ With this concept in mind, out of 2^12 = 4096 signs available, only some were ca
 [Demo](https://herbowicz.github.io/12/) (start typing, try w/caps lock too)
 
 ## A Unique Approach to Cryptography and Design
+![sample text](image.png)
 
 **A novel approach to representing characters using a minimal set of lines.**
 
