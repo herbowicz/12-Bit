@@ -1,5 +1,5 @@
-# 12 Lines Font
-12 Lines Font utilizes a 3-column-3-row grid as start and end points for 6 vertical and 6 horizontal segments of lines that are allowed to join these points in the shortest way possible. 
+# 12-Bit
+12-Bit font utilizes a 3-column-3-row grid as start and end points for 6 vertical and 6 horizontal segments of lines that are allowed to join these points in the shortest way possible. 
 With this concept in mind, out of 2^12 = 4096 signs available, only some were carefully chosen to represent all large and small characters of the standard Latin alphabet. Enjoy!
 
 [Demo](https://herbowicz.github.io/12/) (start typing, try w/caps lock too)
@@ -8,13 +8,13 @@ With this concept in mind, out of 2^12 = 4096 signs available, only some were ca
 ![sample text](image.png)
 
 ## Letters and numbers
-![alt text](letters.png)
+![alt text](signs.png)
 
 ## A Unique Approach to Cryptography and Design
 
 **A novel approach to representing characters using a minimal set of lines.**
 
-This project explores the concept of the 12 Lines font, a unique way to represent characters using a binary code and basic line segments. This approach offers exciting possibilities in cryptography, design, and other security applications.
+This project explores the concept of the 12-Bit font, a unique way to represent characters using a binary code and basic line segments. This approach offers exciting possibilities in cryptography, design, and other security applications.
 
 ### How it Works
 
@@ -63,4 +63,4 @@ ctx.moveTo(s*2+l,s+d); if (sign[at][1]) { ctx.lineTo(s*3+l,s+d); }
 * **Font Optimization:** Optimize the font for different rendering contexts, such as web, print, and mobile devices.
 * **Security Analysis:** Conduct a thorough security analysis to identify potential vulnerabilities and strengthen the font's security properties.
 
-The 12 Lines font offers a promising approach with potential applications in various fields. By leveraging its unique characteristics, we can unlock new possibilities for creative endeavors and security advancements.
+The 12-Bit font offers a promising approach with potential applications in various fields. By leveraging its unique characteristics, we can unlock new possibilities for creative endeavors and security advancements.
