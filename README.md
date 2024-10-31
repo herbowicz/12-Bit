@@ -1,38 +1,60 @@
-# 12 Lines
+# 12 Lines Font
 12 Lines Font utilizes a 3-column-3-row grid as start and end points for 6 vertical and 6 horizontal segments of lines that are allowed to join these points in the shortest way possible. 
 With this concept in mind, out of 2^12 = 4096 signs available, only some were carefully chosen to represent all large and small characters of the standard Latin alphabet. Enjoy!
 
 [Demo](https://herbowicz.github.io/12/) (start typing, try w/caps lock too)
 
-## Sample text
-![sample text](image.png)
+## A Unique Approach to Cryptography and Design
 
-## Why Generate Letters from HTML Canvas Lines for Cryptography?
+**A novel approach to representing characters using a minimal set of lines.**
 
-While using HTML canvas to generate letters for cryptographic purposes might seem unconventional, it offers some intriguing possibilities:
+This project explores the concept of the 12 Lines font, a unique way to represent characters using a binary code and basic line segments. This approach offers exciting possibilities in cryptography, design, and other security applications.
 
-1. Unique Randomness:
+### How it Works
 
-Noise-Based Generation: By manipulating canvas elements like lines, curves, or random pixel patterns, you can generate visually distinct letters.
-Seed-Based Variation: Using different seeds or initial conditions can lead to a vast range of letter variations, making it difficult for attackers to predict patterns.
+1. **Character Representation:**
 
-2. Visual Obfuscation:
+Each character is represented by a 12-bit binary code. Each bit corresponds to a specific line segment within a 3x3 grid.
 
-Camouflaging Information: Embedding information within complex canvas-generated images can make it harder for attackers to identify and extract sensitive data.
-Steganography: By hiding messages within seemingly random patterns, you can create a more secure form of communication.   
+```
+[1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1] // A
+[1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1] // B
+[1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0] // C
+```
 
-3. Human-Resistant Challenges:
+2. **Canvas Rendering:**
 
-CAPTCHA-like Applications: Creating visually challenging CAPTCHAs that require users to identify letters generated from canvas elements can deter automated attacks.
-User Verification: Implementing unique visual puzzles that only humans can solve can be used for authentication purposes.
+The binary code is used to determine which line segments to draw on a canvas. For example, the first bit indicates whether the top horizontal line should be drawn.
 
-4. Art and Design Applications:
+```javascript
+ctx.moveTo(s+l,s+d); if (sign[at][0]) { ctx.lineTo(s*2+l,s+d); } 
+ctx.moveTo(s*2+l,s+d); if (sign[at][1]) { ctx.lineTo(s*3+l,s+d); }
+// ...
+```
 
-Dynamic Typography: Generating unique fonts or letterforms based on canvas manipulations can add a creative and artistic element to design projects.
-Interactive Art: Creating interactive art pieces that respond to user input by generating dynamic letterforms.
-However, it's important to note that:
+### Benefits and Applications
 
-Security: While canvas-based techniques can add a layer of complexity, strong cryptographic algorithms and secure protocols are still essential for robust security.
-Performance: Generating letters on-the-fly can be computationally expensive, especially for large-scale applications.
-Accessibility: Ensure that any visual challenges or puzzles are accessible to users with disabilities.
-In conclusion, while using HTML canvas to generate letters for cryptography and other purposes is an interesting approach, it should be used in conjunction with other proven security measures. The specific implementation and application would determine its effectiveness and suitability for a particular use case.
+1. **Cryptography:**
+
+* **Steganography:** Embed information within images or other media using the minimalist nature of the font.
+* **Security Tokens:** Create unique visual patterns for security tokens or watermarks.
+* **Cryptography:** Utilize the binary representation as input for cryptographic algorithms.
+
+2. **Design:**
+
+* **Unique Typography:** Add a distinctive aesthetic to design projects with the font's style.
+* **Minimalist Design:** Align your project with minimalist design principles using the font's simplicity.
+* **Interactive Art:** Create interactive art installations or digital experiences with the font.
+
+3. **Accessibility:**
+
+* **Simplified Character Recognition:** The reduced number of elements can make character recognition easier for certain applications, such as OCR.
+* **Universal Design:** Adapt the font for various screen sizes and resolutions due to its simplicity.
+
+### Future Directions
+
+* **Dynamic Font Generation:** Explore techniques to generate custom fonts based on specific design constraints or security requirements.
+* **Font Optimization:** Optimize the font for different rendering contexts, such as web, print, and mobile devices.
+* **Security Analysis:** Conduct a thorough security analysis to identify potential vulnerabilities and strengthen the font's security properties.
+
+The 12 Lines font offers a promising approach with potential applications in various fields. By leveraging its unique characteristics, we can unlock new possibilities for creative endeavors and security advancements.
