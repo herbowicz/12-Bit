@@ -7,7 +7,8 @@ With this concept in mind, out of 2^12 = 4096 signs available, only some were ca
 ## Sample text
 ![sample text](image.png)
 
-Why Generate Letters from HTML Canvas Lines for Cryptography?
+## Why Generate Letters from HTML Canvas Lines for Cryptography?
+
 While using HTML canvas to generate letters for cryptographic purposes might seem unconventional, it offers some intriguing possibilities:
 
 1. Unique Randomness:
