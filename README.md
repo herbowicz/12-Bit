@@ -7,6 +7,9 @@ With this concept in mind, out of 2^12 = 4096 signs available, only some were ca
 ## Sample text
 ![sample text](image.png)
 
+## Letters and numbers
+![alt text](letters.png)
+
 ## A Unique Approach to Cryptography and Design
 
 **A novel approach to representing characters using a minimal set of lines.**
