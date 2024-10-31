@@ -1,0 +1,12 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  color: #222;
+  background-color: #ccc;
+}
+
+div {
+  color: #222;
+  float: right;
+}
