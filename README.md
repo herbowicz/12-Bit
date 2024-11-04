@@ -10,6 +10,9 @@ With this concept in mind, out of 2^12 = 4096 signs available, only some were ca
 ## Letters and numbers
 ![alt text](signs.png)
 
+Different font widths can obscure readability.
+![alt text](font-width.png)
+
 ## A Unique Approach to Cryptography and Design
 
 **A novel approach to representing characters using a minimal set of lines.**
