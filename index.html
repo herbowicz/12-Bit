@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>12-Bit</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div>Width: <span id="width"></span> <button onclick="w++; update();">+</button> <button onclick="w--; update();">-</button> Size: <span id="size"></span> <button onclick="s++; update();">+</button> <button onclick="s--; update();">-</button></div>
+  <div id="width">
+    Width:
+    <span></span>
+    <button class="1">+</button>
+    <button class="-1">-</button>
+  </div>
+  <div id="size">
+    Size:
+    <span></span>
+    <button class="1">+</button>
+    <button class="-1">-</button>
+  </div>
   <canvas id="canvas"></canvas>
-  <script src="script.js"></script> 
+  <script src="script.js"></script>
 </body>
+
 </html>
